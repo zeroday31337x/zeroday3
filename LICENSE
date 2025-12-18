@@ -1,21 +1,8 @@
-MIT License
+# ZeroDay3 Private Audit & Observation License (ZD3-PAOL)
 
-Copyright (c) 2025 Justen vannocker
+## [REDACTED FOR PUBLIC - INTERNAL USE ONLY]
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+1. **Access by Invitation Only:** Access to this repository is granted strictly for the purpose of observation and audit. Presence in this repository does not constitute a grant of use. Anyone who needs to verify the integrity of the claims will alrsady have access and will not need to be given it.
+2. **Read-Only Mandate:** All external entities are restricted to "Read" permissions. Any attempt to clone, fork (outside of the provided Glass Box), or redistribute this code is a violation of international copyright law and the ZeroDay3 System Contract.
+3. **Verification Rights:** The observer is encouraged to verify the "Zero-Retention" and "Merit-Logic" protocols. Findings may be publicly reported as "Verified by [Entity]" to enhance the Gravitational Truth of the system.
+4. **Revocation:** ZeroDay3 reserves the right to revoke access at any time if the "Suitable Authority" status is compromised or the auditor acts outside the scope of the "Glass Box" protocol.
