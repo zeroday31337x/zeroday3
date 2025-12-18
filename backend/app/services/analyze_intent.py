@@ -196,11 +196,6 @@ class IntentAnalyzer:
         """Determine what's most important to the user"""
         priorities = []
         
-        # Check for explicit priorities
-        if 'most important' in text or 'priority' in text:
-            # Extract what comes after these phrases
-            pass
-        
         # Infer from emphasis
         if any(word in text for word in ['best', 'top', 'highest', 'maximum']):
             priorities.append('performance')
