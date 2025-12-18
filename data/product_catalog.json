@@ -1,0 +1,93 @@
+{
+  "products": [
+    {
+      "id": "mbp-16-m4-max",
+      "name": "MacBook Pro 16\" (M4 Max)",
+      "category": "Extreme Performance",
+      "use_case": "8K video and local model training",
+      "technical_specs": {
+        "processor": "Apple M4 Max chip (16-core CPU, 40-core GPU)",
+        "memory": "Up to 128GB unified memory",
+        "storage": "Up to 8TB SSD",
+        "display": "16.2-inch Liquid Retina XDR, 3456x2234",
+        "ports": "3x Thunderbolt 5, HDMI, SD card slot, MagSafe 3",
+        "battery": "Up to 22 hours",
+        "weight": "4.8 lbs (2.16 kg)"
+      },
+      "matching_criteria": {
+        "performance_tier": "extreme",
+        "ecosystem": "apple",
+        "portability": "moderate",
+        "gpu_power": "high",
+        "ml_capabilities": "excellent",
+        "price_range": "premium"
+      },
+      "technical_truth": {
+        "strength": "Unmatched energy efficiency for ML workloads, unified memory architecture eliminates GPU transfer bottlenecks",
+        "limitation": "macOS only, limited external GPU support, premium pricing",
+        "ideal_for": "ML engineers, video editors, developers needing maximum performance in portable form factor"
+      }
+    },
+    {
+      "id": "asus-proart-px13",
+      "name": "Asus ProArt PX13",
+      "category": "Precision Creativity",
+      "use_case": "Artists needing high-fidelity touch and dial input",
+      "technical_specs": {
+        "processor": "AMD Ryzen AI 9 HX 370 (12-core)",
+        "memory": "Up to 64GB LPDDR5X",
+        "storage": "Up to 4TB PCIe 4.0 SSD",
+        "display": "13.3-inch OLED touchscreen, 3000x1920, 500 nits, Pantone validated",
+        "graphics": "NVIDIA GeForce RTX 4070 Laptop GPU",
+        "special_features": "Asus Dial, stylus support, 360° convertible",
+        "ports": "2x USB-C (Thunderbolt 4), 1x USB-A, HDMI 2.1, SD card reader",
+        "weight": "3.0 lbs (1.38 kg)"
+      },
+      "matching_criteria": {
+        "performance_tier": "high",
+        "ecosystem": "windows",
+        "portability": "excellent",
+        "gpu_power": "high",
+        "ml_capabilities": "good",
+        "price_range": "premium",
+        "creative_tools": "excellent"
+      },
+      "technical_truth": {
+        "strength": "Best-in-class OLED display with color accuracy, physical dial for precise creative control, convertible form factor",
+        "limitation": "Smaller screen for long sessions, thermal constraints under sustained load",
+        "ideal_for": "Digital artists, photographers, designers who prioritize color accuracy and input precision"
+      }
+    },
+    {
+      "id": "galaxy-book4-ultra",
+      "name": "Galaxy Book4 Ultra",
+      "category": "Ecosystem Synergy",
+      "use_case": "High-performance Windows option for Samsung ecosystem",
+      "technical_specs": {
+        "processor": "Intel Core Ultra 9 185H (16-core)",
+        "memory": "Up to 32GB LPDDR5X",
+        "storage": "Up to 1TB NVMe SSD",
+        "display": "16-inch Dynamic AMOLED 2X, 2880x1800, 120Hz, HDR500",
+        "graphics": "NVIDIA GeForce RTX 4070 Laptop GPU",
+        "special_features": "Samsung ecosystem integration, S Pen support",
+        "ports": "2x Thunderbolt 4, 2x USB-A, HDMI 2.1, microSD",
+        "battery": "76Wh",
+        "weight": "3.9 lbs (1.78 kg)"
+      },
+      "matching_criteria": {
+        "performance_tier": "high",
+        "ecosystem": "samsung",
+        "portability": "good",
+        "gpu_power": "high",
+        "ml_capabilities": "good",
+        "price_range": "premium",
+        "ecosystem_integration": "excellent"
+      },
+      "technical_truth": {
+        "strength": "Seamless Samsung device integration, excellent AMOLED display, strong GPU for the weight class",
+        "limitation": "Samsung ecosystem lock-in provides most value, less refined than MacBook Pro in build quality",
+        "ideal_for": "Developers and creators already in Samsung ecosystem, Windows users needing premium hardware"
+      }
+    }
+  ]
+}
