@@ -6,3 +6,6 @@
 2. **Read-Only Mandate:** All external entities are restricted to "Read" permissions. Any attempt to clone, fork (outside of the provided Glass Box), or redistribute this code is a violation of international copyright law and the ZeroDay3 System Contract.
 3. **Verification Rights:** The observer is encouraged to verify the "Zero-Retention" and "Merit-Logic" protocols. Findings may be publicly reported as "Verified by [Entity]" to enhance the Gravitational Truth of the system.
 4. **Revocation:** ZeroDay3 reserves the right to revoke access at any time if the "Suitable Authority" status is compromised or the auditor acts outside the scope of the "Glass Box" protocol.
+
+
+  Edited MIT License - customized. 
