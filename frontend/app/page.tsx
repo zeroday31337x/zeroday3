@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import CompanyForm from '@/components/CompanyForm';
 import IndividualForm from '@/components/IndividualForm';
 
@@ -10,6 +11,16 @@ export default function Home() {
   return (
     <main className="min-h-screen p-8">
       <div className="max-w-4xl mx-auto">
+        {/* Admin Link */}
+        <div className="flex justify-end mb-4">
+          <Link
+            href="/admin"
+            className="text-sm text-gray-500 hover:text-zd-accent transition-all"
+          >
+            Admin Dashboard →
+          </Link>
+        </div>
+
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-zd-accent mb-4">

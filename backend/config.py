@@ -28,6 +28,15 @@ class Settings(BaseSettings):
     structural_logic_weight: float = 0.65  # Structural logic weight
     precision_weight: float = 0.35  # Original precision weight
     
+    # Gemini API Configuration
+    gemini_api_key: str = ""
+    gemini_model: str = "gemini-pro"
+    
+    # Admin Authentication
+    admin_secret_key: str = "your-secret-key-change-in-production"
+    admin_algorithm: str = "HS256"
+    admin_access_token_expire_minutes: int = 30
+    
     class Config:
         env_file = ".env"
 

@@ -8,7 +8,7 @@ from contextlib import asynccontextmanager
 
 from config import get_settings
 from app.models import HealthCheck
-from app.routers import matching, catalog
+from app.routers import matching, catalog, admin
 
 
 settings = get_settings()
@@ -27,6 +27,14 @@ async def lifespan(app: FastAPI):
     products = data_loader.load_product_catalog()
     tools = data_loader.load_ai_tools_catalog()
     print(f"Loaded {len(products)} products and {len(tools)} AI tools")
+    
+    # Initialize Gemini service
+    from app.services.gemini_admin import get_gemini_service
+    gemini_service = get_gemini_service()
+    if gemini_service.model:
+        print("Gemini AI service initialized")
+    else:
+        print("Warning: Gemini AI service not configured (GEMINI_API_KEY not set)")
     
     yield
     
@@ -54,6 +62,7 @@ app.add_middleware(
 # Include routers
 app.include_router(matching.router, prefix=settings.api_prefix)
 app.include_router(catalog.router, prefix=settings.api_prefix)
+app.include_router(admin.router, prefix=settings.api_prefix)
 
 
 @app.get("/", response_model=HealthCheck)
