@@ -1,0 +1,241 @@
+{
+  "ai_tools": [
+    {
+      "id": "openai-gpt4",
+      "name": "OpenAI GPT-4",
+      "category": "General Purpose LLM",
+      "use_cases": [
+        "Customer support automation",
+        "Content generation",
+        "Code assistance",
+        "Data analysis"
+      ],
+      "technical_specs": {
+        "model_type": "Large Language Model",
+        "api_available": true,
+        "deployment_options": ["cloud"],
+        "context_window": "128k tokens",
+        "modalities": ["text", "vision"],
+        "pricing_model": "token-based"
+      },
+      "matching_criteria": {
+        "automation_potential": "high",
+        "scalability": "excellent",
+        "api_compatibility": "REST API, Python SDK, Node SDK",
+        "specialization": "general",
+        "cost_efficiency": "moderate",
+        "latency": "low"
+      },
+      "deployment_guide": {
+        "setup_steps": [
+          "Obtain API key from OpenAI platform",
+          "Install official SDK: pip install openai",
+          "Configure environment variables for API key",
+          "Implement rate limiting and error handling",
+          "Set up monitoring and logging"
+        ],
+        "best_practices": [
+          "Use streaming for better UX",
+          "Implement prompt caching for repeated queries",
+          "Set appropriate temperature and max_tokens",
+          "Use function calling for structured outputs"
+        ]
+      },
+      "technical_truth": {
+        "strength": "Industry-leading general intelligence, excellent API reliability, extensive documentation",
+        "limitation": "Cloud-only, data privacy concerns for sensitive info, cost can scale quickly",
+        "ideal_for": "Companies needing robust general AI without infrastructure overhead"
+      }
+    },
+    {
+      "id": "anthropic-claude",
+      "name": "Anthropic Claude",
+      "category": "Safety-Focused LLM",
+      "use_cases": [
+        "Complex reasoning tasks",
+        "Long-document analysis",
+        "Ethical AI applications",
+        "Research assistance"
+      ],
+      "technical_specs": {
+        "model_type": "Large Language Model",
+        "api_available": true,
+        "deployment_options": ["cloud"],
+        "context_window": "200k tokens",
+        "modalities": ["text", "vision"],
+        "pricing_model": "token-based"
+      },
+      "matching_criteria": {
+        "automation_potential": "high",
+        "scalability": "excellent",
+        "api_compatibility": "REST API, Python SDK",
+        "specialization": "reasoning",
+        "cost_efficiency": "good",
+        "latency": "low"
+      },
+      "deployment_guide": {
+        "setup_steps": [
+          "Register for Anthropic API access",
+          "Install SDK: pip install anthropic",
+          "Set ANTHROPIC_API_KEY environment variable",
+          "Configure request parameters",
+          "Implement retry logic with exponential backoff"
+        ],
+        "best_practices": [
+          "Leverage extended context for document analysis",
+          "Use system prompts for consistent behavior",
+          "Implement thinking tags for complex reasoning",
+          "Monitor token usage for cost optimization"
+        ]
+      },
+      "technical_truth": {
+        "strength": "Superior reasoning capability, largest context window, strong safety alignment",
+        "limitation": "Cloud-only, newer ecosystem with fewer integrations",
+        "ideal_for": "Applications requiring deep analysis, ethical AI concerns, or long-context processing"
+      }
+    },
+    {
+      "id": "langchain-agents",
+      "name": "LangChain Agent Framework",
+      "category": "Agentic Workflow",
+      "use_cases": [
+        "Multi-step automation",
+        "Tool-using AI systems",
+        "RAG applications",
+        "Complex orchestration"
+      ],
+      "technical_specs": {
+        "model_type": "Agent Framework",
+        "api_available": false,
+        "deployment_options": ["self-hosted", "cloud"],
+        "supported_llms": ["OpenAI", "Anthropic", "local models"],
+        "pricing_model": "open-source"
+      },
+      "matching_criteria": {
+        "automation_potential": "excellent",
+        "scalability": "good",
+        "api_compatibility": "Python framework, integrates with multiple APIs",
+        "specialization": "orchestration",
+        "cost_efficiency": "excellent",
+        "latency": "variable"
+      },
+      "deployment_guide": {
+        "setup_steps": [
+          "Install framework: pip install langchain langchain-openai",
+          "Choose and configure LLM backend",
+          "Define tools and agent type (ReAct, Plan-Execute, etc.)",
+          "Set up vector store for memory/RAG if needed",
+          "Configure callbacks for observability"
+        ],
+        "best_practices": [
+          "Start with simple ReAct agents before complex flows",
+          "Use LangSmith for debugging and monitoring",
+          "Implement proper error handling for tool failures",
+          "Cache embeddings to reduce costs",
+          "Version control prompts and configurations"
+        ]
+      },
+      "technical_truth": {
+        "strength": "Maximum flexibility, multi-LLM support, extensive tool ecosystem, self-hostable",
+        "limitation": "Requires development expertise, more complex than single API, versioning can be unstable",
+        "ideal_for": "Engineering teams building custom AI workflows with multiple tools and data sources"
+      }
+    },
+    {
+      "id": "local-llama",
+      "name": "Local LLaMA Deployment",
+      "category": "Self-Hosted LLM",
+      "use_cases": [
+        "Data-sensitive applications",
+        "Offline operations",
+        "Custom fine-tuning",
+        "Cost-controlled inference"
+      ],
+      "technical_specs": {
+        "model_type": "Large Language Model",
+        "api_available": true,
+        "deployment_options": ["self-hosted"],
+        "context_window": "up to 128k tokens (model dependent)",
+        "modalities": ["text"],
+        "pricing_model": "infrastructure only"
+      },
+      "matching_criteria": {
+        "automation_potential": "moderate",
+        "scalability": "moderate",
+        "api_compatibility": "OpenAI-compatible API via llama.cpp, Ollama, vLLM",
+        "specialization": "privacy",
+        "cost_efficiency": "excellent",
+        "latency": "variable"
+      },
+      "deployment_guide": {
+        "setup_steps": [
+          "Choose deployment method (Ollama for simplicity, vLLM for production)",
+          "Select model variant based on hardware (7B, 13B, 70B)",
+          "Install: curl https://ollama.ai/install.sh | sh",
+          "Pull model: ollama pull llama2",
+          "Expose API endpoint with proper authentication",
+          "Set up monitoring and resource management"
+        ],
+        "best_practices": [
+          "Use quantized models (GGUF) for resource efficiency",
+          "Implement request queuing for GPU utilization",
+          "Monitor VRAM usage and set appropriate context limits",
+          "Fine-tune on domain-specific data if needed",
+          "Keep models updated for security and capability"
+        ]
+      },
+      "technical_truth": {
+        "strength": "Complete data privacy, no usage costs after setup, customizable, offline capability",
+        "limitation": "Requires significant GPU resources, slower inference than cloud, maintenance overhead",
+        "ideal_for": "Organizations with data privacy requirements, high-volume predictable workloads, or custom model needs"
+      }
+    },
+    {
+      "id": "zapier-ai",
+      "name": "Zapier AI Automation",
+      "category": "No-Code Integration",
+      "use_cases": [
+        "Workflow automation",
+        "App integration",
+        "Data synchronization",
+        "Simple AI tasks"
+      ],
+      "technical_specs": {
+        "model_type": "Integration Platform",
+        "api_available": true,
+        "deployment_options": ["cloud"],
+        "supported_integrations": "5000+ apps",
+        "pricing_model": "subscription-based"
+      },
+      "matching_criteria": {
+        "automation_potential": "good",
+        "scalability": "good",
+        "api_compatibility": "REST API, webhooks, 5000+ native integrations",
+        "specialization": "integration",
+        "cost_efficiency": "moderate",
+        "latency": "moderate"
+      },
+      "deployment_guide": {
+        "setup_steps": [
+          "Create Zapier account and select plan",
+          "Connect required apps via OAuth",
+          "Build Zaps using trigger-action model",
+          "Add AI features via ChatGPT or Claude integrations",
+          "Test thoroughly before enabling"
+        ],
+        "best_practices": [
+          "Use filters to prevent unnecessary task consumption",
+          "Implement error notifications via email/Slack",
+          "Version control Zap configurations via export",
+          "Monitor task usage to optimize plan tier",
+          "Use multi-step Zaps judiciously to control costs"
+        ]
+      },
+      "technical_truth": {
+        "strength": "Zero code required, massive integration ecosystem, quick deployment, AI features built-in",
+        "limitation": "Limited customization, vendor lock-in, task limits can be costly, not suitable for complex logic",
+        "ideal_for": "Non-technical teams needing quick automation, businesses heavily using SaaS tools"
+      }
+    }
+  ]
+}
